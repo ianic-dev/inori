@@ -58,7 +58,7 @@ pub fn add_tracks(model: &mut Model) -> Result<()> {
                     .map(|i| i.1)
                     .unwrap_or("<ALBUM NOT FOUND>".into()),
                 tracks: album.to_vec(),
-                expanded: true,
+                expanded: false,
             });
         }
     }
